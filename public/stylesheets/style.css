@@ -1,0 +1,17 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.error_box {
+  width: 30%;
+  padding: 0.5em 1em;
+  margin: 2em 2rem;
+  color: #ff7d6e;
+  background: #ffebe9;
+  border-top: solid 10px #ff7d6e;
+}
+.error_box li {
+  list-style: none;
+  margin: 0; 
+  padding: 0;
+}

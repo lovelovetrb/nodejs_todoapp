@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title><%= title %></title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="../public/stylesheets/style.css">
+</head>
+<body>
+  <%- include('./header'); %>
+  <%- include('./error_messages'); %>
+  <div class="m-3">  
+    <form action="/signup" method="post">
+      <label>ユーザ名</label>
+      <input required type="text" name="username"/>
+      <br>
+      <label>パスワード</label>
+      <input required type="password" name="password"/>
+      <br>
+      <label>パスワード再入力</label>
+      <input required type="password" name="repassword"/>
+      <br>
+      <input class="btn btn-primary" type="submit" value="Sign up"/>
+    </form>
+  </div>
+</body>
+</html>

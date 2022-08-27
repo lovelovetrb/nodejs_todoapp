@@ -1,0 +1,10 @@
+<% if (typeof errorMessage === 'undefined') { var errorMessage = []; } %>
+<% if(errorMessage.length != 0){ %>
+  <div class="error_box">
+    <ul>
+      <% for(let item of errorMessage){ %>
+        <li><%= item %></li>
+      <% } %>
+    </ul>
+  </div>
+<% } %>
